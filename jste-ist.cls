@@ -155,4 +155,4 @@
 \sectiondot{subsection}
 \sectiondot{subsubsection}
 
-\renewcommand\refname{\centerline{参考文献}\global\def\refname{参考文献}}
+\renewcommand\refname{\leftline{参考文献}\global\def\refname{参考文献}}
