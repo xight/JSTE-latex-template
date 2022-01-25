@@ -1,0 +1,184 @@
+\documentclass[uplatex, dvipdfmx]{jste-ist}
+
+\usepackage{graphicx}
+\usepackage{amssymb} % 記号
+
+% 表関連
+\usepackage{colortbl,array,xcolor}
+\usepackage{tabularx}
+\newcolumntype{C}{>{\centering}X}
+\renewcommand{\tabularxcolumn}[1]{m{#1}}
+\usepackage{booktabs}
+
+% 箇条書き
+\usepackage{enumitem}
+
+\usepackage{cite}
+% citeを上付き (X) に変更しない
+%\let\cite=\citen
+%\renewcommand\citeform[1]{\hspace{-0.1mm}\textsuperscript{(#1)}\hspace{-1mm}}
+
+% 参考文献のリストを X) に変更
+\makeatletter 
+\renewcommand{\@biblabel}[1]{#1)} 
+\makeatother
+
+\usepackage{caption}
+\captionsetup[table]{format=plain, labelformat=simple, labelsep=quad, labelfont={bf, rm}, textfont=sf}
+\captionsetup[figure]{format=plain, labelformat=simple, labelsep=quad, labelfont={bf, rm}, textfont=sf}
+
+\title{日本産業技術教育学会 情報分科会 講演論文集}
+%\etitle{How to Write Your Paper for the JSTE Research Reports}
+%\subtitle{一般発表・講演論文の作成要領について}
+%\esubtitle{Towards Open Access}
+%\abstract{ここには，発表される研究の概要をお書きください．講演論文集は，オフセット印刷（Ａ４判）での出版を行います．鮮明で読みやすく，正確な出版物とするために，論文集へ掲載する原稿は，以下の要領で作成をお願いいたします．また，以下の執筆要領を著しく逸脱した原稿は掲載できない場合があります．ご留意ください．}
+%\keyword{}
+
+\author{$\bigcirc$情報 太郎 (情報大学)，情報 花子(情報大学)，情報 次郎(情報大学)}
+%\eauthor{Taro Joho$^\ast$\hspace{1cm}Hanako Joho$^\ast$\hspace{1cm}Jiro Joho$^{\ast\ast}$}
+
+%\affiliation{情報大学教育学部\hspace{2cm}情報大学工学部\hspace{2cm}情報大学大学院大学}
+%\eaffiliation{
+%Faculty of Engineering, Joho University$^\ast$\\
+%Faculty of Education, Joho University$^{\ast\ast}$}
+
+%\email{taro\_joho@xxx.yyy.ac.jp\hspace{5mm}hanako\_joho@zzz.yyy.ac.jp\hspace{5mm}jiro\_joho@kkk.lll.ac.jp}
+
+% 下線
+\usepackage{ulinej}
+
+% レイアウトの確認
+\usepackage{layout}
+
+\begin{document}
+
+%\layout
+
+\maketitle
+
+\section{はじめに}
+
+これは，一般発表を対象として日本産業技術教育学会 情報分科会における講演要旨の原稿作成指針を作成要領としてまとめたものである．
+
+\section{留意点}
+
+\subsection{原稿の媒体}
+
+原稿ファイル（電子媒体）のみ受け付けます。
+原稿ファイルは原則として，以下のテンプレートファイルを使用して作成して下さい。
+
+情報分科会研究発表会用論文原稿のテンプレートファイル
+
+
+\subsection{原稿の提出}
+
+原稿ファイルは，講演論文提出フォームから提出してください
+
+\subsection{原稿のサイズ、余白}
+
+原稿はそのままのサイズで印刷します。A4版のサイズで原稿を作成して下さい。
+
+A4サイズの紙を縦長に配置し，そのまま印刷できるように執筆して下さい。
+
+マージンは以下のとおりです。
+
+上，下，左，右マージン:それぞれ30mm
+
+\subsection{ページ番号}
+
+ページ番号を付けないようにしてください。
+
+\subsection{文字の大きさ}
+
+文字の大きさは，印刷後でも正確に判読できる大きさにして下さい。
+
+文字の大きさは，9ポイントから12ポイント程度にして下さい。
+
+\subsection{題目、氏名、本文}
+
+講演題目，氏名(所属)，本文は以下のように記載して下さい。
+
+1行目~2行目:講演題目(副題も含む)
+
+3行目:著者名1(所属)…著者名n(所属)
+
+講演発表する著者名の前に○印を付けて下さい。
+
+なお，日本産業技術教育学会の会員でない著者が含まれている場合，その著者名の後に上付きの‡印を付けて下さい。
+
+4行目:空白
+
+5行目:本文の始まり 但し，指定の行内に書ききれない場合は順次繰り下げて書いて下さい。
+
+\subsection{内容}
+
+本文には，目的，方法，結果等を適当な章節で区分し明瞭に書いて下さい。
+
+章，節はポイントシステムにより，構造的に記述して下さい。
+
+\subsubsection{例}
+
+1.はじめに 1.1 1.2 2.本研究の背景
+
+\section{図表}
+
+図表には，それぞれ図1，表1のように一連番号を付すとともに題を付けて下さい。
+
+図の題は，図の下側に
+表の題は，表の上側に配置して下さい。
+
+
+\subsection{文字のフォントとサイズ}
+
+\begin{table}[htb]
+	\caption{フォントとポイント}
+	\begin{tabularx}{\columnwidth}{llr}
+		\hline
+		\textbf{項目} & \textbf{フォント} & \textbf{ポイント} \\ \hline
+		タイトル & ゴシック & 14 \\
+		著者名 & ゴシック & 12 \\
+		%所属 & ゴシック & 11 \\
+		%メールアドレス & ゴシック& 11 \\
+		%アブストラクト & 明朝 & 9 \\
+		各章の見出し & ゴシック & 10.5 \\
+		本文 & 明朝 & 10.5 \\
+		\hline
+	\end{tabularx}
+\end{table}
+
+\subsection{図表}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=4cm]{jste-logo.pdf}
+\caption{本学会のロゴ}
+\label{fig:jste-logo}
+\end{figure}
+
+
+\subsection{参考文献}
+
+参考文献は，下記の「参考文献」欄の例を参考に，以下の必要項目を記述してください． 
+
+\begin{itemize}
+\item 論文誌・雑誌の場合
+	\cite{sample-article:en}
+	\cite{sample-article:ja}
+	\cite{sample-article2:ja}
+	：著者名，タイトル，雑誌名，巻，号，ページ，発行年．
+\item 書籍の場合
+	\cite{sample-book:ja}：著者名，書名，発行所，発行年．
+\end{itemize}
+
+また，本文中で参考文献
+\cite{sample-article:en}
+\cite{sample-article:ja}
+\cite{sample-article2:ja}
+\cite{sample-book:ja}
+に関連する箇所には，このように参考文献番号を上付きで付与してください．
+
+\bibliographystyle{jste}
+
+\bibliography{sample}
+
+\end{document}  
